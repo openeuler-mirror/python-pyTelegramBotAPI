@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-pyTelegramBotAPI
-Version:	3.7.9
+Version:	4.6.0
 Release:	1
 Summary:	Python Telegram bot api.
 License:	GPL2
 URL:		https://github.com/eternnoir/pyTelegramBotAPI
-Source0:	https://files.pythonhosted.org/packages/21/d4/440ef91bc6154cd72705b7a048a7e2d91ff6af3a379ed39fed9b6f1b214f/pyTelegramBotAPI-3.7.9.tar.gz
+Source0:	https://files.pythonhosted.org/packages/ff/2b/f096df78edb243df0bd2c6ac3bb6a4c49ed9addf2e5424373f1b28449a1b/pyTelegramBotAPI-4.6.0.tar.gz
 BuildArch:	noarch
 
 %description
@@ -23,7 +23,7 @@ Provides:	python3-pyTelegramBotAPI-doc
 %description help
 Development documents and examples for pyTelegramBotAPI
 %prep
-%autosetup -n pyTelegramBotAPI-3.7.9
+%autosetup -n pyTelegramBotAPI-4.6.0
 
 %build
 %py3_build
@@ -63,5 +63,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Tue jul 05 2022 hkgy <kaguyahatu@outlook.com> - 4.6.0-1
+- Upgrade version to 4.6.0
+
 * Sun May 23 2021 Python_Bot <Python_Bot@openeuler.org>
 - Package Spec generated
